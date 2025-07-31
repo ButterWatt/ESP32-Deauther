@@ -21,7 +21,7 @@ void handle_root() {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESP32-Deauther</title>
+    <title>ESP32 Deauther</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -79,12 +79,12 @@ void handle_root() {
     </style>
 </head>
 <body>
-    <h1>ESP32-Deauther</h1>
+    <h1>ESP32 Deauther</h1>
     
     <h2>WiFi Networks</h2>
     <table>
         <tr>
-            <th>Number</th>
+            <th>No.</th>
             <th>SSID</th>
             <th>BSSID</th>
             <th>Channel</th>
@@ -108,7 +108,7 @@ void handle_root() {
 
     <form method="post" action="/deauth">
         <h2>Launch Deauth-Attack</h2>
-        <input type="text" name="net_num" placeholder="Network Number">
+        <input type="text" name="net_num" placeholder="Network No.">
         <input type="text" name="reason" placeholder="Reason code">
         <input type="submit" value="Launch Attack">
     </form>
@@ -225,7 +225,7 @@ void handle_deauth() {
   } else {
     html += R"( error">
         <h2>Error: Invalid Network Number</h2>
-        <p>Please select a valid network number.</p>
+        <p>Please enter a valid network number.</p>
     </div>)";
   }
 
@@ -287,6 +287,8 @@ void handle_deauth_all() {
         <p>WiFi will shut down now. To stop the attack, please reset the ESP32.</p>
         <p>Reason code: )" + String(reason) + R"(</p>
     </div>
+<div id="copy">Code By <a target="_blank" href="https://github.com/tesa-klebeband">Tesa Klebeband</a></div>
+<div id="copy">Modified By <a target="_blank" href="https://facebook.com/ButterWatt">Butter Watt</a></div>
 </body>
 </html>
   )";
