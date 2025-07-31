@@ -103,7 +103,7 @@ void handle_root() {
     </table>
 
     <form method="post" action="/rescan">
-        <input type="submit" value="Sccan networks">
+        <input type="submit" value="Scan networks">
     </form>
 
     <form method="post" action="/deauth">
