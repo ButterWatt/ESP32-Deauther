@@ -31,9 +31,9 @@ jobs:
           mkdir -p firmware
           for env in .pio/build/*; do
             envname=$(basename "$env")
-            cp "$env/firmware.bin" "firmware/firmware_${envname}.bin" || echo "Missing firmware.bin for $envname"
-            cp "$env/bootloader.bin" "firmware/bootloader_${envname}.bin" || echo "Missing bootloader.bin for $envname"
-            cp "$env/partitions.bin" "firmware/partitions_${envname}.bin" || echo "Missing partitions.bin for $envname"
+            cp -f "$env/firmware.bin" "firmware/firmware_${envname}.bin" || echo "Missing firmware.bin for $envname"
+            cp -f "$env/bootloader.bin" "firmware/bootloader_${envname}.bin" || echo "Missing bootloader.bin for $envname"
+            cp -f "$env/partitions.bin" "firmware/partitions_${envname}.bin" || echo "Missing partitions.bin for $envname"
           done
 
       - name: Upload all firmware files
