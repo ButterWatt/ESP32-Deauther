@@ -157,6 +157,8 @@ void handle_root() {
         <tr><td>23</td><td>IEEE 802.1X authentication failed.</td></tr>
         <tr><td>24</td><td>Cipher suite rejected because of the security policy.</td></tr>
     </table>
+    <div id="copy">Code By <a target="_blank" href="https://github.com/tesa-klebeband">Tesa Klebeband</a></div>
+    <div id="copy">Modified By <a target="_blank" href="https://facebook.com/ButterWatt">Butter Watt</a></div>
 </body>
 </html>
 )";
@@ -287,8 +289,6 @@ void handle_deauth_all() {
         <p>WiFi will shut down now. To stop the attack, please reset the ESP32.</p>
         <p>Reason code: )" + String(reason) + R"(</p>
     </div>
-<div id="copy">Code By <a target="_blank" href="https://github.com/tesa-klebeband">Tesa Klebeband</a></div>
-<div id="copy">Modified By <a target="_blank" href="https://facebook.com/ButterWatt">Butter Watt</a></div>
 </body>
 </html>
   )";
