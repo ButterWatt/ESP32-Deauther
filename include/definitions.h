@@ -1,7 +1,7 @@
 #ifndef DEFINITIONS_H
 #define DEFINITIONS_H
 
-#define AP_SSID "ESP32 Deauther"
+#define AP_SSID "ESP32 Deauther - Unit 1"
 #define AP_PASS "ButterWatt1038"
 #define LED 2
 #define SERIAL_DEBUG
