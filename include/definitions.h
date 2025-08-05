@@ -1,9 +1,9 @@
 #ifndef DEFINITIONS_H
 #define DEFINITIONS_H
 
-#define AP_SSID "ESP32 Deauther - Unit 2"
+#define AP_SSID "ESP32 Deauther - 2.4 GHz Sucks"
 #define AP_PASS "ButterWatt1038"
-#define LED 2
+#define LED 4
 #define SERIAL_DEBUG
 #define CHANNEL_MAX 13
 #define NUM_FRAMES_PER_DEAUTH 16
