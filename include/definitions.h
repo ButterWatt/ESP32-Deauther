@@ -4,6 +4,8 @@
 #define AP_SSID "ESP32 Deauther - 2.4 GHz Sucks"
 #define AP_PASS "ButterWatt1038"
 #define LED 4
+#define GREEN_LED 16
+#define BLUE_LED 17
 #define SERIAL_DEBUG
 #define CHANNEL_MAX 13
 #define NUM_FRAMES_PER_DEAUTH 16
